@@ -89,6 +89,7 @@ Property | Description | Required | Default
 -|-|-|-
 projectUrl | Project source code repository url | no | -
 title | Title to show on boot of webshell | no | vue-webshell
+promptSignal | The prompt signal | no | $
 queryIpUrl | Url to fetch your external ip address | no | -
 dockerhubProfile | Your docker hub profile username | no | -
 githubProfile | Your github profile username | no | -
