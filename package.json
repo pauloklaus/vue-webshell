@@ -1,0 +1,63 @@
+{
+  "name": "vue-webshell",
+  "version": "0.1.0",
+  "description": "Vue webshell component.",
+  "author": {
+    "name": "Paulo Sergio Klaus",
+    "email": "contato@pauloklaus.com.br"
+  },
+  "repository": "https://github.com/pauloklaus/vue-webshell",
+  "bugs": "https://github.com/pauloklaus/vue-webshell/issues",
+  "keywords": [
+    "shell",
+    "webshell",
+    "vue",
+    "vuejs"
+  ],
+  "license": "GPLv3",
+  "private": false,
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name VueWebshell src/index.js; rm -f ./dist/demo.html",
+    "lint": "vue-cli-service lint"
+  },
+  "main": "dist/VueWebshell.umd.js",
+  "browser": "dist/VueWebshell.common.js",
+  "unpkg": "dist/VueWebshell.umd.min.js",
+  "jsDelivr": "dist/VueWebshell.umd.min.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
